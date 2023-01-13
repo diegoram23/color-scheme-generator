@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Scheme Generator</title>
+</head>
+
+<body>
+    <nav>
+        <input type="color" value="#f55a5a">
+        <label for="color-choices"></label>
+        <select name="color-choices" id="color-choices">
+            <option value="Monochrome">Monochrome</option>
+            <option value="Monochrome-dark">Monochrome-dark</option>
+            <option value="Monochrome-light">Monochrome-light</option>
+            <option value="Analogic">Analogic</option>
+            <option value="Complement">Complement</option>
+            <option value="Analogic-complement">Analogic-complement</option>
+            <option value="Triad">Triad</option>
+        </select>
+        <button id="get-colors-btn">Get color scheme</button>
+    </nav>
+    <main>
+        <div class='colors-container'>
+            <div class="color-palette color-one"></div>
+            <div class="color-palette color-two"></div>
+            <div class="color-palette color-three"></div>
+            <div class="color-palette color-four"></div>
+            <div class="color-palette color-five"></div>
+        </div>
+        <div class="color-names">
+            <p>#F55A5A</p>
+            <p>#2B283A</p>
+            <p>#FBF3AB</p>
+            <p>#AAD1B6</p>
+            <p>#A626D3</p>
+        </div>
+    </main>
+</body>
+
+</html>

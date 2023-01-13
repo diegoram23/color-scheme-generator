@@ -1,0 +1,83 @@
+body {
+    max-width: 410px;
+    margin: 0 auto;
+    padding: 4em 1em;
+    min-height: 100vh;
+    color: #374151;
+}
+
+/*---- SHARED STYLES ----*/
+
+nav,button,select, .color-names {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+
+nav, .color-names, .colors-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*---- INDIVIDUAL NAV STYLES ----*/
+
+select {
+    max-width:130px;
+}
+nav {
+    padding: 0.8em 0.5em;
+}
+
+button {
+    cursor: pointer;
+}
+
+button, select {
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+input, button, select {
+    border: 1px solid #d1d5db;
+
+}
+/*----- INDIVIDUAL COLOR PALETTE STYLES -----*/
+
+.color-names {
+    height: 35px;
+}
+
+.color-palette {
+    height: 270px;
+    width: 100%;
+}
+
+.color-one {
+    background-color: #F55A5A;
+}
+
+.color-two {
+    background-color: #2B283A;
+}
+
+.color-three {
+    background-color: #FBF3AB;
+}
+
+.color-four {
+    background-color: #AAD1B6;
+}
+
+.color-five {
+    background-color: #A626D3;
+}
+
+/*------ MEDIA QUERIES --------*/
+@media(min-width:500px) {
+    body {
+        max-width: 700px;
+        padding-top: 10em;
+    }
+    select {
+        min-width: 200px;
+    }
+}
