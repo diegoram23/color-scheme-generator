@@ -11,9 +11,9 @@
 
 <body>
     <nav>
-        <input type="color" value="#f55a5a">
-        <label for="color-choices"></label>
-        <select name="color-choices" id="color-choices">
+        <input type="color" value="#f55a5a" id="input-color">
+        <label for="input-pattern"></label>
+        <select name="input-pattern" id="input-pattern">
             <option value="Monochrome">Monochrome</option>
             <option value="Monochrome-dark">Monochrome-dark</option>
             <option value="Monochrome-light">Monochrome-light</option>
@@ -25,7 +25,7 @@
         <button id="get-colors-btn">Get color scheme</button>
     </nav>
     <main>
-        <div class='colors-container'>
+        <div class='colors-scheme-container' id="colors-scheme-container">
             <div class="color-palette color-one"></div>
             <div class="color-palette color-two"></div>
             <div class="color-palette color-three"></div>
@@ -39,7 +39,9 @@
             <p>#AAD1B6</p>
             <p>#A626D3</p>
         </div>
+        
     </main>
+    <script src="index.js" defer></script>
 </body>
 
 </html>
