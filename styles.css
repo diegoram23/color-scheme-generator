@@ -4,6 +4,7 @@ body {
     padding: 4em 1em;
     min-height: 100vh;
     color: #374151;
+   
 }
 
 /*---- SHARED STYLES ----*/
@@ -47,28 +48,12 @@ input, button, select {
 }
 
 .color-palette {
-    height: 270px;
+    height: 320px;
     width: 100%;
 }
 
-.color-one {
-    background-color: #F55A5A;
-}
-
-.color-two {
-    background-color: #2B283A;
-}
-
-.color-three {
-    background-color: #FBF3AB;
-}
-
-.color-four {
-    background-color: #AAD1B6;
-}
-
-.color-five {
-    background-color: #A626D3;
+#content{
+    display: flex;
 }
 
 /*------ MEDIA QUERIES --------*/
