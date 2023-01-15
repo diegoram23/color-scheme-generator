@@ -12,24 +12,20 @@ function getColor() {
         .then(res => res.json())
         .then(data => {
             console.log(data)
-            let html =''
-            for(let color of data.colors){
-                html += `
-                <div class='color-palette'style='background:${color.hex.value}'>
-                <div class='color-names'>
-                <p>${color.hex.value}</p>
-                </div>
-                </div>
-                `
-            }
-            document.getElementById('content').innerHTML = html
+            const getHtml = data.colors.map(color => {
+                return `
+                     <div class='color-palette'style='background:${color.hex.value}'>
+                    <div class='color-names'>
+                    <p>${color.hex.value}</p>
+                     </div>
+                     </div>`
+            }).join('')
+            document.getElementById('content').innerHTML = getHtml
         })
-
-
 }
 
-//calls the default display
+//calls and renders the default display
 function render() {
-getColor()
+    getColor()
 }
 render()

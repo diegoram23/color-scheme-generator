@@ -7,6 +7,10 @@ body {
    
 }
 
+#content{
+    display: flex;
+}
+
 /*---- SHARED STYLES ----*/
 
 nav,button,select, .color-names {
@@ -50,10 +54,6 @@ input, button, select {
 .color-palette {
     height: 320px;
     width: 100%;
-}
-
-#content{
-    display: flex;
 }
 
 /*------ MEDIA QUERIES --------*/
